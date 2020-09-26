@@ -31,9 +31,13 @@ namespace FB.TransactionalOutbox.Application.Events
             return mapped;
         }
 
-        public async Task<IList<EventDto>> GetEventsAsync()
+        public async Task<IList<EventDto>> GetEventsAsync(bool includeIsDeleted = false)
         {
-            var events = await _dbContext.Events.AsNoTracking().ToListAsync();
+            var query = _dbContext.Events.AsNoTracking();
+            if (!includeIsDeleted)
+                query = query.Where(e => !e.IsDeleted);
+
+            var events = await query.ToListAsync();
             var mapped = Mapper.Map<IList<EventDto>>(events).ToList();
             mapped.ForEach(e => e.EventBody = JsonConvert.DeserializeObject(e.EventBody?.ToString()));
             return mapped;

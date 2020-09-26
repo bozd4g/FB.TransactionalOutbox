@@ -9,8 +9,7 @@ using MediatR;
 
 namespace FB.TransactionalOutbox.Application.Events
 {
-    public class EventsHandler : IRequestHandler<GetUndeletedEventsQuery, IList<EventDto>>,
-            IRequestHandler<DeleteThrewEventsCommand, bool>,
+    public class EventsHandler : IRequestHandler<DeleteThrewEventsCommand, bool>,
             IRequestHandler<GetEventsQuery, IList<EventDto>>
     {
         private readonly IEventAppService _eventAppService;
@@ -20,11 +19,6 @@ namespace FB.TransactionalOutbox.Application.Events
             _eventAppService = eventAppService;
         }
 
-        public async Task<IList<EventDto>> Handle(GetUndeletedEventsQuery request, CancellationToken cancellationToken)
-        {
-            return await _eventAppService.GetUndeletedEventsAsync();
-        }
-
         public async Task<bool> Handle(DeleteThrewEventsCommand request, CancellationToken cancellationToken)
         {
             return await _eventAppService.Delete(request.Ids);
@@ -32,7 +26,7 @@ namespace FB.TransactionalOutbox.Application.Events
 
         public async Task<IList<EventDto>> Handle(GetEventsQuery request, CancellationToken cancellationToken)
         {
-            return await _eventAppService.GetEventsAsync();
+            return await _eventAppService.GetEventsAsync(request.IncludeIsDeleted);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace FB.TransactionalOutbox.Infrastructure.Hangfire.Jobs
 
         public async Task Start()
         {
-            var events = await _mediator.Send(new GetUndeletedEventsQuery());
+            var events = await _mediator.Send(new GetEventsQuery());
             if (events.Count == 0)
                 return;
 

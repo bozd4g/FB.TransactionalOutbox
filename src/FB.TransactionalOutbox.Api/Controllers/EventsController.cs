@@ -22,7 +22,7 @@ namespace FB.TransactionalOutbox.Api.Controllers
         [ProducesResponseType(typeof(bool), (int) HttpStatusCode.OK)]
         public async Task<ApiResponse> Get()
         {
-            var response = await _mediator.Send(new GetEventsQuery());
+            var response = await _mediator.Send(new GetEventsQuery(includeIsDeleted: true));
             return ApiResponse(response.ToList());
         }
     }

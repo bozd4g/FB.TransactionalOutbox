@@ -23,6 +23,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FB.TransactionalOutbox.Application.Contracts\FB.TransactionalOutbox.Application.Contracts.csproj" />
+      <ProjectReference Include="..\FB.TransactionalOutbox.Application.Contracts\FB.TransactionalOutbox.Application.Contracts.csproj" />
     </ItemGroup>
 </Project>

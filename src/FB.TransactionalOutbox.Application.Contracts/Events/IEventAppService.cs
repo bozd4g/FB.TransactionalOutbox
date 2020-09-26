@@ -8,8 +8,7 @@ namespace FB.TransactionalOutbox.Application.Contracts.Events
 {
     public interface IEventAppService : IInstancePerLifetimeScope
     {
-        Task<IList<EventDto>> GetUndeletedEventsAsync();
-        Task<IList<EventDto>> GetEventsAsync();
+        Task<IList<EventDto>> GetEventsAsync(bool includeIsDeleted = false);
         Task<bool> Delete(IList<Guid> ids);
     }
 }
