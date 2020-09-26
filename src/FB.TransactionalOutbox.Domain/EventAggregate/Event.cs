@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using FB.TransactionalOutbox.Domain.SeedWork;
 
 namespace FB.TransactionalOutbox.Domain.EventAggregate
@@ -8,10 +7,7 @@ namespace FB.TransactionalOutbox.Domain.EventAggregate
     {
         public string EventName { get; private set; }
         public string TopicName { get; private set; }
-
-        [Column(TypeName = "jsonb")]
         public string EventBody { get; private set; }
-
         public bool IsDeleted { get; private set; }
         public DateTime? DeletedTime { get; private set; }
         public Guid? DeletedUserId { get; private set; }
