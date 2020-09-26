@@ -1,12 +1,12 @@
 using System;
-using FB.TransactionalOutbox.Application.BackgroundJobs;
-using FB.TransactionalOutbox.Application.BackgroundJobs.Jobs;
+using FB.TransactionalOutbox.Infrastructure.Hangfire;
+using FB.TransactionalOutbox.Infrastructure.Hangfire.Jobs;
 using Hangfire;
 using Hangfire.MemoryStorage;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FB.TransactionalOutbox.Api.Extensions
+namespace FB.TransactionalOutbox.Infrastructure.Extensions
 {
     public static class HangfireExtension
     {
@@ -25,8 +25,7 @@ namespace FB.TransactionalOutbox.Api.Extensions
         {
             app.UseHangfireDashboard();
             GlobalConfiguration.Configuration.UseActivator(new HangfireActivator(serviceProvider));
-            
-            // Jobs
+
             RecurringJob.RemoveIfExists(nameof(OutboxTableReadJob));
             RecurringJob.AddOrUpdate<OutboxTableReadJob>(nameof(OutboxTableReadJob), job => job.Start(), Cron.Minutely);
         }

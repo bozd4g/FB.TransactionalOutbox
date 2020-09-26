@@ -1,6 +1,6 @@
 using System;
 
-namespace FB.TransactionalOutbox.Application.Exceptions
+namespace FB.TransactionalOutbox.Infrastructure.Exceptions
 {
     [Serializable]
     public class UserFriendlyException : Exception

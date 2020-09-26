@@ -1,13 +1,13 @@
 using System.Threading.Tasks;
 using AutoMapper;
-using FB.TransactionalOutbox.Application.Contracts;
 using FB.TransactionalOutbox.Application.Contracts.Users;
 using FB.TransactionalOutbox.Application.Contracts.Users.Commands;
 using FB.TransactionalOutbox.Application.Contracts.Users.Dtos;
 using FB.TransactionalOutbox.Application.Contracts.Users.Queries;
-using FB.TransactionalOutbox.Application.Exceptions;
 using FB.TransactionalOutbox.Domain.UserAggregate;
-using FB.TransactionalOutbox.EntityFrameworkCore;
+using FB.TransactionalOutbox.Infrastructure;
+using FB.TransactionalOutbox.Infrastructure.Exceptions;
+using FB.TransactionalOutbox.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 

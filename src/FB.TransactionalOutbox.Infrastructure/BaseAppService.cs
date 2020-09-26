@@ -1,7 +1,7 @@
 using AutoMapper;
 using Microsoft.Extensions.Logging;
 
-namespace FB.TransactionalOutbox.Application
+namespace FB.TransactionalOutbox.Infrastructure
 {
     public class BaseAppService
     {

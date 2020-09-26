@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using FB.TransactionalOutbox.Domain.UserAggregate;
 
-namespace FB.TransactionalOutbox.EntityFrameworkCore
+namespace FB.TransactionalOutbox.Persistence
 {
     public static class DataGenerator
     {

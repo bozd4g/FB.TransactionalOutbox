@@ -17,7 +17,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\FB.TransactionalOutbox.Application.Contracts\FB.TransactionalOutbox.Application.Contracts.csproj" />
-      <ProjectReference Include="..\FB.TransactionalOutbox.EntityFrameworkCore\FB.TransactionalOutbox.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\FB.TransactionalOutbox.Infrastructure\FB.TransactionalOutbox.Infrastructure.csproj" />
+      <ProjectReference Include="..\FB.TransactionalOutbox.Peass\FB.TransactionalOutbox.Peass.csproj" />
+      <ProjectReference Include="..\FB.TransactionalOutbox.Persistence\FB.TransactionalOutbox.Persistence.csproj" />
     </ItemGroup>
 
     <ItemGroup>

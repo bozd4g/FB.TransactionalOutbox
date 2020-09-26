@@ -1,4 +1,5 @@
 using FB.TransactionalOutbox.Application;
+using FB.TransactionalOutbox.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FB.TransactionalOutbox.Api.Controllers

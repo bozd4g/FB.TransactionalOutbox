@@ -1,8 +1,9 @@
 using System;
+using Hangfire;
 
-namespace FB.TransactionalOutbox.Application.BackgroundJobs
+namespace FB.TransactionalOutbox.Infrastructure.Hangfire
 {
-    public class HangfireActivator : Hangfire.JobActivator
+    public class HangfireActivator : JobActivator
     {
         private readonly IServiceProvider _serviceProvider;
 

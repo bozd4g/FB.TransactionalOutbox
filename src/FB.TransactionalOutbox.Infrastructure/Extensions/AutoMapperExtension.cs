@@ -1,13 +1,14 @@
+using System;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FB.TransactionalOutbox.Api.Extensions
+namespace FB.TransactionalOutbox.Infrastructure.Extensions
 {
     public static class AutoMapperExtension
     {
-        public static void AddMapper(this IServiceCollection services)
+        public static void AddMapper(this IServiceCollection services, Type startupType)
         { 
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(startupType);
             var mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.AddMaps(new []

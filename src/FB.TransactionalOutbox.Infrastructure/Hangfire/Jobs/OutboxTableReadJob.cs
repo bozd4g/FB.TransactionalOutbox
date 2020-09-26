@@ -7,7 +7,7 @@ using MediatR;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 
-namespace FB.TransactionalOutbox.Application.BackgroundJobs.Jobs
+namespace FB.TransactionalOutbox.Infrastructure.Hangfire.Jobs
 {
     public class OutboxTableReadJob : IJob
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FB.TransactionalOutbox.Application
+namespace FB.TransactionalOutbox.Infrastructure
 {
     [Serializable]
     public class ApiResponse

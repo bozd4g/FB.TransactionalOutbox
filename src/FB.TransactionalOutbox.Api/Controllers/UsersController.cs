@@ -5,6 +5,7 @@ using FB.TransactionalOutbox.Application;
 using FB.TransactionalOutbox.Application.Contracts.Users.Commands;
 using FB.TransactionalOutbox.Application.Contracts.Users.Dtos.Request;
 using FB.TransactionalOutbox.Application.Contracts.Users.Queries;
+using FB.TransactionalOutbox.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

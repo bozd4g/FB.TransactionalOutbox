@@ -18,7 +18,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.TransactionalOutbox.Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.TransactionalOutbox.Domain.Shared", "src\FB.TransactionalOutbox.Domain.Shared\FB.TransactionalOutbox.Domain.Shared.csproj", "{13D3B085-2897-4919-A9E9-2FDC9E4C3DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.TransactionalOutbox.EntityFrameworkCore", "src\FB.TransactionalOutbox.EntityFrameworkCore\FB.TransactionalOutbox.EntityFrameworkCore.csproj", "{5840FC0E-7764-4DA3-8CEA-59D6038A1A66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.TransactionalOutbox.Persistence", "src\FB.TransactionalOutbox.Persistence\FB.TransactionalOutbox.Persistence.csproj", "{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.TransactionalOutbox.Infrastructure", "src\FB.TransactionalOutbox.Infrastructure\FB.TransactionalOutbox.Infrastructure.csproj", "{D85C8CD4-9620-42B8-A0FD-F3252B2D520B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,7 +35,8 @@ Global
 		{3F46C6AF-836D-4EC3-96DF-AF07E0B30086} = {7139F6EB-56B0-4447-ADF8-81298EF2C436}
 		{65172A0B-757F-4EF0-B1C1-AEDA681A887A} = {7139F6EB-56B0-4447-ADF8-81298EF2C436}
 		{13D3B085-2897-4919-A9E9-2FDC9E4C3DC3} = {656C9FCB-D730-4C00-86B1-3ED4356E9DBB}
-		{5840FC0E-7764-4DA3-8CEA-59D6038A1A66} = {656C9FCB-D730-4C00-86B1-3ED4356E9DBB}
+		{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E} = {656C9FCB-D730-4C00-86B1-3ED4356E9DBB}
+		{D85C8CD4-9620-42B8-A0FD-F3252B2D520B} = {656C9FCB-D730-4C00-86B1-3ED4356E9DBB}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{91AED7C9-39B5-47DF-9244-6417D6A66B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -64,9 +67,13 @@ Global
 		{13D3B085-2897-4919-A9E9-2FDC9E4C3DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D3B085-2897-4919-A9E9-2FDC9E4C3DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D3B085-2897-4919-A9E9-2FDC9E4C3DC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5840FC0E-7764-4DA3-8CEA-59D6038A1A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5840FC0E-7764-4DA3-8CEA-59D6038A1A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5840FC0E-7764-4DA3-8CEA-59D6038A1A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5840FC0E-7764-4DA3-8CEA-59D6038A1A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A4EC2B-0F81-4AE1-B4A1-B3B71836890E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D85C8CD4-9620-42B8-A0FD-F3252B2D520B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85C8CD4-9620-42B8-A0FD-F3252B2D520B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85C8CD4-9620-42B8-A0FD-F3252B2D520B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85C8CD4-9620-42B8-A0FD-F3252B2D520B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

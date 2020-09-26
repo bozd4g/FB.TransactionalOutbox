@@ -4,7 +4,7 @@ using FB.TransactionalOutbox.Application.Contracts.Users;
 using FB.TransactionalOutbox.Application.Contracts.Users.Commands;
 using FB.TransactionalOutbox.Application.Contracts.Users.Dtos;
 using FB.TransactionalOutbox.Application.Contracts.Users.Queries;
-using FB.TransactionalOutbox.Application.Exceptions;
+using FB.TransactionalOutbox.Infrastructure.Exceptions;
 using MediatR;
 
 namespace FB.TransactionalOutbox.Application.Users

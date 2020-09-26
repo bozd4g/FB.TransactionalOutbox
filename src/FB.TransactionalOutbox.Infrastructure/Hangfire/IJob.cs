@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace FB.TransactionalOutbox.Application.BackgroundJobs
+namespace FB.TransactionalOutbox.Infrastructure.Hangfire
 {
     public interface IJob
     {

@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using FB.TransactionalOutbox.Application;
 using FB.TransactionalOutbox.Application.Contracts.Events.Queries;
+using FB.TransactionalOutbox.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

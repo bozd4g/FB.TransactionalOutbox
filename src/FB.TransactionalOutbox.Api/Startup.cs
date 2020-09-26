@@ -1,10 +1,10 @@
 using System;
 using Autofac;
-using FB.TransactionalOutbox.Api.Extensions;
-using FB.TransactionalOutbox.Api.Middlewares;
 using FB.TransactionalOutbox.Application.Contracts;
 using FB.TransactionalOutbox.Application.Modules;
-using FB.TransactionalOutbox.EntityFrameworkCore;
+using FB.TransactionalOutbox.Infrastructure.Extensions;
+using FB.TransactionalOutbox.Infrastructure.Middlewares;
+using FB.TransactionalOutbox.Persistence;
 using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -34,7 +34,7 @@ namespace FB.TransactionalOutbox.Api
         {
             services.AddAppSettings(Configuration);
             services.AddSwagger(Configuration);
-            services.AddMapper();
+            services.AddMapper(typeof(Startup));
             services.AddHttpContextAccessor();
 
             services

@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using Autofac.Extensions.DependencyInjection;
-using FB.TransactionalOutbox.EntityFrameworkCore;
+using FB.TransactionalOutbox.Persistence;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

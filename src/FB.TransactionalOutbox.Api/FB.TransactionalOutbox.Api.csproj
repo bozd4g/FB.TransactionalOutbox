@@ -4,25 +4,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Autofac" Version="5.0.0" />
-        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
-        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
-        <PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
-        <PackageReference Include="MediatR" Version="8.0.0" />
-        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.3" />
-        <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
-        <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
-        <PackageReference Include="Serilog.Sinks.MongoDB" Version="4.0.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
-        <PackageReference Include="Hangfire.Core" Version="1.7.*" />
-        <PackageReference Include="Hangfire.AspNetCore" Version="1.7.*" />
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\FB.TransactionalOutbox.Application\FB.TransactionalOutbox.Application.csproj" />
-        <ProjectReference Include="..\FB.TransactionalOutbox.EntityFrameworkCore\FB.TransactionalOutbox.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\FB.TransactionalOutbox.Infrastructure\FB.TransactionalOutbox.Infrastructure.csproj" />
+        <ProjectReference Include="..\FB.TransactionalOutbox.Peass\FB.TransactionalOutbox.Peass.csproj" />
+        <ProjectReference Include="..\FB.TransactionalOutbox.Persistence\FB.TransactionalOutbox.Persistence.csproj" />
     </ItemGroup>
 </Project>

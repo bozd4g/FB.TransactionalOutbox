@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace FB.TransactionalOutbox.EntityFrameworkCore
+namespace FB.TransactionalOutbox.Persistence
 {
     public class ApplicationDbContext : DbContext
     {

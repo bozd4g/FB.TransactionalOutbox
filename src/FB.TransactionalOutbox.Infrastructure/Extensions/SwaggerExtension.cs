@@ -1,10 +1,9 @@
-using System.Collections.Generic;
 using FB.TransactionalOutbox.Application.Contracts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace FB.TransactionalOutbox.Api.Extensions
+namespace FB.TransactionalOutbox.Infrastructure.Extensions
 {
     public static class SwaggerExtension
     {

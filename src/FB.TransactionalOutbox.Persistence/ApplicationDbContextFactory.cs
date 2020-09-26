@@ -1,8 +1,8 @@
+using FB.TransactionalOutbox.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-
-namespace FB.TransactionalOutbox.EntityFrameworkCore
+namespace FB.TransactionalOutbox.Persistence
 {
     public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
     {

@@ -1,16 +1,13 @@
 using System;
 using System.Net;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using FB.TransactionalOutbox.Application;
-using FB.TransactionalOutbox.Application.Exceptions;
+using FB.TransactionalOutbox.Infrastructure.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace FB.TransactionalOutbox.Api.Middlewares
+namespace FB.TransactionalOutbox.Infrastructure.Middlewares
 {
     public class UserFriendlyExceptionMiddleware
     {

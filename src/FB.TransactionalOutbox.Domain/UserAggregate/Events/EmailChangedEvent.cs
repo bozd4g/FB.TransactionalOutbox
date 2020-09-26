@@ -1,4 +1,3 @@
-using System.Text.Json.Serialization;
 using FB.TransactionalOutbox.Domain.Shared;
 using FB.TransactionalOutbox.Domain.Shared.Consts;
 using MediatR;
