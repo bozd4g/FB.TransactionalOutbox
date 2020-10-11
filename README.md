@@ -11,4 +11,6 @@ docker run -d --hostname my-rabbit --name myrabbit -e RABBITMQ_DEFAULT_USER=gues
 ```
 and create a virtual host called as ``demand``.
 
-## Articles [WIP]
+## Articles
+
+- What happens if we lose some event(s) during transaction? — [Part 1](https://bit.ly/33OOwHH "What happens if we lose some event(s) during transaction?") 
