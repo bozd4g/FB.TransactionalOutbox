@@ -13,4 +13,4 @@ and create a virtual host called as ``demand``.
 
 ## Articles
 
-- What happens if we lose some event(s) during transaction? — [Part 1](https://bit.ly/33OOwHH "What happens if we lose some event(s) during transaction?") 
+- What happens if we lose some event(s) during transaction? — [Link](https://bit.ly/33OOwHH "What happens if we lose some event(s) during transaction?") 
